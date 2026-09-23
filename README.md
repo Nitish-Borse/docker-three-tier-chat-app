@@ -121,7 +121,7 @@ For AWS deployment:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/<YOUR-USERNAME>/docker-three-tier-chat-app.git
+git clone https://github.com/Nitish-Borse/docker-three-tier-chat-app.git
 cd docker-three-tier-chat-app
 ```
 
