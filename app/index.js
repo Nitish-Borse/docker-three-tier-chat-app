@@ -20,8 +20,8 @@ main()
 
 async function main() {
     await mongoose.connect(
-	    mongoose.connect(process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/whatsapp')
-   );
+        process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/whatsapp'
+    );
 }
 
 app.get("/", (req, res) => {
@@ -59,7 +59,7 @@ app.post("/chats", (req, res) => {
     res.redirect("/chats");
 });
 
-//edit route to edit chat 
+//edit route to edit chat
 app.get("/chats/:id/edit", async (req, res) => {
     let { id } = req.params;
     let chat = await Chat.findById(id);
